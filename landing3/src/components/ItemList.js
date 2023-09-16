@@ -1,19 +1,75 @@
 import './App.css';
 
 function ItemList() {
-    const dataList = [
-        { text: "내용1" },
-        { text: "내용2" },
-        { text: "내용3" },
-        { text: "내용4" },
-        { text: "내용5" },
-        // ... 추가로 더 있을 수 있음
+    const itemDataList = [
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+        { 
+            title: "가전",
+            img: "images/item/appliance.jpg" 
+        },
+
+        // ... 추가
       ];
 
     // dataList를 두 부분으로 나눔
-    const halfLength = Math.ceil(dataList.length / 2);
-    const firstHalf = dataList.slice(0, halfLength);
-    const secondHalf = dataList.slice(halfLength);
+    const halfLength = Math.ceil(itemDataList.length / 2);
+    const itemFirstHalf = itemDataList.slice(0, halfLength);
+    const itemSecondHalf = itemDataList.slice(halfLength);
 
     return (
         <div id="main">
@@ -28,23 +84,26 @@ function ItemList() {
                     <i class="bi bi-plus-circle-fill" id="moreButton02"></i>
                     <i class="bi bi-dash-circle-fill" id="closeButton02" style={{display: 'none'}}></i>
 
-                    <div>
-                        <div className="item">
-                            <div className="item-container">
-                                {firstHalf.map((item, index) => (
-                                    <p key={index}>{item.text}</p>
+                    <div class="content">
+                        <div>
+                            <div className="item">
+                                {itemFirstHalf.map((item, index) => (
+                                    <div>
+                                        <div className='itemimg'><img src={item.img} alt={item.title} /></div>
+                                        <p key={index}>{item.title}</p>
+                                    </div>
                                 ))}
                             </div>
-                        </div>
-                        <div className="item">
-                            <div className="item-container">
-                                {secondHalf.map((item, index) => (
-                                    <p key={index}>{item.text}</p>
+                            <div className="item">
+                                {itemSecondHalf.map((item, index) => (
+                                    <div>
+                                        <div className='itemimg'><img src={item.img} alt={item.title} /></div>
+                                        <p key={index}>{item.title}</p>
+                                    </div>
                                 ))}
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
         </div>
