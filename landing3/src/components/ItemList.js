@@ -4,63 +4,63 @@ function ItemList() {
     const itemDataList = [
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
         { 
             title: "가전",
-            img: "images/item/appliance.jpg" 
+            img: "../images/item/appliance.jpg" 
         },
 
         // ... 추가
