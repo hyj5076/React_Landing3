@@ -1,6 +1,7 @@
 import './App.css';
 
 function ShopList() {
+    
   return (
     <div id="main">
         <section id="section03">
