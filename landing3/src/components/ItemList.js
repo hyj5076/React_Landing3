@@ -1,4 +1,5 @@
 import './App.css';
+import { useMoreButtonFunction } from './MoreFunction';
 
 function ItemList() {
     const itemDataList = [
@@ -61,15 +62,21 @@ function ItemList() {
         { 
             title: "가전",
             img: "../images/item/appliance.jpg" 
-        },
-
-        // ... 추가
+        }
       ];
 
+      const {
+        displayItems,
+        moreButtonVisible,
+        closeButtonVisible,
+        showMore,
+        close,
+      } = useMoreButtonFunction(itemDataList, 8);  
+
     // dataList를 두 부분으로 나눔
-    const halfLength = Math.ceil(itemDataList.length / 2);
-    const itemFirstHalf = itemDataList.slice(0, halfLength);
-    const itemSecondHalf = itemDataList.slice(halfLength);
+    const halfLength = Math.ceil(displayItems.length / 2);
+    const itemFirstHalf = displayItems.slice(0, halfLength);
+    const itemSecondHalf = displayItems.slice(halfLength);
 
     return (
         <div id="main">
@@ -81,8 +88,9 @@ function ItemList() {
                             <p>입주를 위한<br />모든 것이 한곳에!</p>
                         </div>
                     </div>
-                    <i class="bi bi-plus-circle-fill" id="moreButton02"></i>
-                    <i class="bi bi-dash-circle-fill" id="closeButton02" style={{display: 'none'}}></i>
+                    
+                    {moreButtonVisible && <button onClick={showMore}><i class="bi bi-plus-circle-fill" id="moreButton02"></i></button>}
+      {closeButtonVisible && <button onClick={close}><i class="bi bi-dash-circle-fill" id="closeButton02"></i></button>}
 
                     <div class="content">
                         <div>
@@ -102,6 +110,7 @@ function ItemList() {
                                     </div>
                                 ))}
                             </div>
+
                         </div>
                     </div>
                 </div>

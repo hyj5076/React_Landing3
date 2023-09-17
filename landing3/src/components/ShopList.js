@@ -1,6 +1,6 @@
 import './App.css';
 
-function ShopList() {
+function ShopList() {  
 
     const shopDataList = [
         {
@@ -87,7 +87,7 @@ function ShopList() {
             title: "삼성전자",
             img: "images/item/appliance.jpg"
         },
-    ]
+    ];
 
     const shopHalfLength = Math.ceil(shopDataList.length / 2);
     const shopFirstHalf = shopDataList.slice(0, shopHalfLength);
