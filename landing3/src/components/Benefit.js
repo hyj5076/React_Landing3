@@ -1,4 +1,5 @@
 import './App.css';
+import { useMoreButtonFunction } from './MoreFunction';
 
 function Benefit() {
     const benefitDataList = [
@@ -36,6 +37,14 @@ function Benefit() {
         }
     ];
 
+    const {
+        displayItems,
+        moreButtonVisible,
+        closeButtonVisible,
+        showMore,
+        close,
+      } = useMoreButtonFunction(benefitDataList, 6);  
+
     return (
         <div id="main">
             <section id="section04">
@@ -51,7 +60,7 @@ function Benefit() {
                     <div class="content">
                         <div>
                             <div class="benefit">
-                            {benefitDataList.map((benefit, index) => (
+                            {displayItems.map((benefit, index) => (
                                 <div>
                                     <div><img src={benefit.img} alt={benefit.title}/></div>
                                     <p key={index}>{benefit.title}</p>
@@ -59,8 +68,8 @@ function Benefit() {
                             ))}
                             </div>
                         </div>
-                        <i class="bi bi-plus-circle-fill" id="moreButton04"></i>
-                        <i class="bi bi-dash-circle-fill" id="closeButton04" style={{display: 'none'}}></i>
+                        {moreButtonVisible && <button onClick={showMore}><i class="bi bi-plus-circle-fill" id="moreButton04"></i></button>}
+      {closeButtonVisible && <button onClick={close}><i class="bi bi-dash-circle-fill" id="closeButton04"></i></button>}
                     </div>
                     
                     <div class="textp">

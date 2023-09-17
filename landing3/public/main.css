@@ -483,19 +483,27 @@ h3 {
         padding: 5px 0;
     }
 
-    #section02 .bi {
-        position: absolute;
-        color: var(--color-black200);
-        font-size: 3rem;
-        bottom: 65px;
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: pointer;
-    }
 
     .hidden {
         display:none;
     }
+
+    #section02 button {
+        position: absolute;
+        bottom: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        border: 0;
+        border-radius: 30px;
+        background-color: #f5f5f5;
+    }
+
+    #section02 .bi {
+        font-size: 3rem;
+        color: var(--color-black200);
+    }
+
 
 
 /* 루프 돌리는 기능은 display:none 에서 display:block 으로 바꾸면, css가 깨지기 때문에 따로 min-width로 설정해줌 */
@@ -723,14 +731,20 @@ h3 {
         white-space: pre-line;
     }
 
-    #section04 .bi {
+    #section04 button {
         position: absolute;
-        color: var(--color-black200);
-        font-size: 3rem;
         bottom: 140px;
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
+        border: 0;
+        border-radius: 30px;
+        background-color: #f5f5f5;
+    }
+
+    #section04 .bi {
+        font-size: 3rem;
+        color: var(--color-black200);
     }
 
 

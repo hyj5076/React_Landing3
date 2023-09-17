@@ -110,7 +110,6 @@ function ItemList() {
                                     </div>
                                 ))}
                             </div>
-
                         </div>
                     </div>
                 </div>
