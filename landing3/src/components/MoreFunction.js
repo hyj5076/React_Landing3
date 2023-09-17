@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 
+// 더보기 버튼
 export const useMoreButtonFunction = (initialItems, n) => {
   const [displayItems, setDisplayItems] = useState(initialItems.slice(0, n));
   const [hiddenItems, setHiddenItems] = useState(initialItems.slice(n));
