@@ -366,7 +366,11 @@ h3 {
     섹션01 : 메인페이지
    --------------------------------------------- */
 
-#section01 .style {
+/* ---------------------------------------------
+    섹션01 : 메인페이지
+   --------------------------------------------- */
+
+   #section01 .style {
     background: url('../images/background.jpg') center center no-repeat;
     background-size: cover;
     width: 100%;
@@ -388,28 +392,38 @@ h3 {
         border: var(--bord-op-solid);
         border-radius: var(--bord-radius-all);
         padding: 60px 0;
+        /* background-color: var(--color-background-main); */
     }
 
 #section01 h1 {
     padding-bottom: 10px;
     font-size: var(--font-large);
-    color: var(--color-main);
     font-weight: 500;
+    color: #fff;
 }
 
 #section01 p {
-    padding-bottom: 40px;
     color: var(--color-main);
 }
 
 #section01 .exhibition {
-    font-size: 2.6rem;
-    font-weight: 500;
+    font-size: 3.6rem;
+    font-weight: 600;
+    padding-bottom: 40px;
+    color: #0062a9;
+    text-shadow: 1px 1px 1px #ddd;
 }
 
 #section01 .date {
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+
+#section01 .time {
+    font-size: 1.8rem;
+    padding-bottom: 40px;
+    font-weight: 400;
 }
 
 .title .btn a {
@@ -417,7 +431,7 @@ h3 {
     width: 60%;
     padding: 15px 0;
     background-color: var(--color-background-button-op);
-    border: var(--bord-op-solid);
+    border: var(--bord-solid);
     color: var(--color-white);
     font-size: var(--font-button);
     border-radius: var(--bord-radius-all);
