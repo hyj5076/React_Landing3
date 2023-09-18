@@ -284,6 +284,11 @@ header {
                 text-shadow: none;
             }
 
+    header.active-white {
+        background: #fff;
+        box-shadow: var(--box-shadow-100);
+    }
+
     header.active-white .logo {
         background: #fff;
     }

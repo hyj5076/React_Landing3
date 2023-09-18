@@ -3,39 +3,36 @@ import './App.css';
 
 function Header() {
   const [navVisible, setNavVisible] = useState(false);
+  const [scrollActive, setScrollActive] = useState(false);
 
   useEffect(() => {
     const navBtn = document.querySelector('.nav_btn');
     const nav = document.querySelector('nav');
     const header = document.querySelector('header');
-    const icon = document.querySelector('.nav_btn i');
 
+    const handleScroll = () => {
+      if (!navVisible) {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > 150) {
+          setScrollActive(true);
+        } else {
+          setScrollActive(false);
+        }
+      }
+    };
+    
     const toggleNav = (e) => {
       e.preventDefault();
       if (!navVisible) {
         nav.style.display = 'block';
         nav.style.height = `${nav.scrollHeight}px`;
-        icon.classList.remove('bi-list');
-        icon.classList.add('bi-x');
         header.classList.add('active-click', 'active-white');
       } else {
         nav.style.height = '0';
         nav.style.display = 'none';
-        icon.classList.remove('bi-x');
-        icon.classList.add('bi-list');
         header.classList.remove('active-click', 'active-white');
       }
       setNavVisible(!navVisible);
-    };
-
-    const handleScroll = () => {
-      let scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-
-      if (scrollTop > 150) {
-        header.classList.add('active-scroll');
-      } else {
-        header.classList.remove('active-scroll');
-      }
     };
 
     navBtn.addEventListener('click', toggleNav);
@@ -45,15 +42,15 @@ function Header() {
       navBtn.removeEventListener('click', toggleNav);
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [navVisible]);
+  }, [navVisible, scrollActive]);
 
   return (
     <div>
-      <header className="active-scroll active-click active-white">
+      <header className={`${scrollActive ? 'active-scroll' : ''}`}>
         <div className="logo">
           <div className="inner">
             <p><a href="#">EDEN<br/>C&S</a></p>
-            <div className="nav_btn"><i className="bi bi-list"></i></div>
+            <div className="nav_btn"><i className={`bi ${navVisible ? 'bi-x' : 'bi-list'}`}></i></div>
           </div>
         </div>
 
