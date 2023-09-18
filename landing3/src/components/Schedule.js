@@ -1,6 +1,17 @@
 import './App.css';
 
 function Schedule() {
+
+    const goToMap = () => {
+        const addressElement = document.querySelector('#myAddress');
+        const addressText = addressElement.innerText;
+    
+        // Google 지도 링크 생성
+        const mapLink = 'https://www.google.co.kr/maps/?hl=ko&entry=ttu&q=' + encodeURIComponent(addressText);
+
+        window.open(mapLink, '_blank');
+    };
+
   return (
     <div id="main">
         <section id="section06">
@@ -31,7 +42,7 @@ function Schedule() {
 
                     <div class="place">
                         <div class="icon">
-                            <a href="" id="goToMap"><i class="bi bi-geo-alt-fill"></i></a>
+                        <a href="#" onClick={(e) => {e.preventDefault(); goToMap();}}><i class="bi bi-geo-alt-fill"></i></a>
                         </div>
                         <div class="txt">
                             <h5>장소</h5>
