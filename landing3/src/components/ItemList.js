@@ -109,7 +109,7 @@ function ItemList() {
                     </div>
                     
                     {moreButtonVisible && <button onClick={showMore}><i class="bi bi-plus-circle-fill" id="moreButton02"></i></button>}
-      {closeButtonVisible && <button onClick={close}><i class="bi bi-dash-circle-fill" id="closeButton02"></i></button>}
+      {closeButtonVisible && <button onClick={() => close('section02')}><i class="bi bi-dash-circle-fill" id="closeButton02"></i></button>}
 
                     <div class="content">
                         <div>

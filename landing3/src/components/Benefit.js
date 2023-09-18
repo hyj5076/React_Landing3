@@ -69,7 +69,7 @@ function Benefit() {
                             </div>
                         </div>
                         {moreButtonVisible && <button onClick={showMore}><i class="bi bi-plus-circle-fill" id="moreButton04"></i></button>}
-      {closeButtonVisible && <button onClick={close}><i class="bi bi-dash-circle-fill" id="closeButton04"></i></button>}
+      {closeButtonVisible && <button onClick={() => close('section04')}><i class="bi bi-dash-circle-fill" id="closeButton04"></i></button>}
                     </div>
                     
                     <div class="textp">

@@ -19,12 +19,19 @@ export const useMoreButtonFunction = (initialItems, n) => {
     }
   };
 
-  const close = () => {
+  const close = (sectionId) => {
     setDisplayItems(initialItems.slice(0, n));
     setHiddenItems(initialItems.slice(n));
     setMoreButtonVisible(true);
     setCloseButtonVisible(false);
-    // Add code here if you want to scroll to the top of the component or perform other actions
+    scrollToSection(sectionId);
+  };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return {
