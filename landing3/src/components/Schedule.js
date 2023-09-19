@@ -30,7 +30,7 @@ function Schedule() {
                             <input type="date" id="endDayInput" value="2023-10-22" />
                         </div>
                         <div class="icon">
-                            <a href="javascript:void(0);"><i id="calendarIcon" class="bi bi-calendar-fill"></i></a>
+                            <a href=""><i id="calendarIcon" class="bi bi-calendar-fill"></i></a>
                             <div class="calendar" id="calendar"></div>
                         </div>
                         <div class="txt">

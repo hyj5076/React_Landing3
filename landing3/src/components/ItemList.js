@@ -1,8 +1,10 @@
 import './App.css';
 import { useMoreButtonFunction } from './MoreFunction';
+import { useSnapFunction } from './SnapFunction';
 import { useState, useEffect } from 'react';
 
 function ItemList() {
+    useSnapFunction('#section02 .content');
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const itemDataList = [

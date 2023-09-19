@@ -2,6 +2,7 @@ import './App.css';
 import { useMoreButtonFunction } from './MoreFunction';
 
 function Benefit() {
+    
     const benefitDataList = [
         {
             title: "무선 LED 무드등 증정",
@@ -44,6 +45,7 @@ function Benefit() {
         showMore,
         close,
       } = useMoreButtonFunction(benefitDataList, 6);  
+
 
     return (
         <div id="main">
