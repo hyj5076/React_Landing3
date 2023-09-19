@@ -25,89 +25,113 @@ function ShopList() {
 
     const shopDataList = [
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "사려니가구",
+            img: "images/logo/saryeni.png"
+        },
+        {
+            title: "공기수비대",
+            img: "images/logo/airguard.png"
+        },
+        {
+            title: "뷰티클린",
+            img: "images/logo/beautyclean.png"
+        },
+        {
+            title: "반딧불이",
+            img: "images/logo/light.png"
         },
         {
             title: "삼성전자",
             img: "images/item/appliance.jpg"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "코웨이",
+            img: "images/logo/coway.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "가화",
+            img: "images/logo/gawha.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "제이택",
+            img: "images/logo/jtech.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "세라믹프로",
+            img: "images/logo/ceramic_pro.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "코럼",
+            img: "images/logo/corum.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "인포유",
+            img: "images/logo/inforu.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "디자인다나",
+            img: "images/logo/dana.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "메종",
+            img: "images/logo/maison.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "딜라이브",
+            img: "images/logo/dlive.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "예림도어",
+            img: "images/logo/yerim.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "휴렉",
+            img: "images/logo/hulec.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "아가앤매트",
+            img: "images/logo/aga.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "반짝반짝",
+            img: "images/logo/twinkle.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "가브커튼",
+            img: "images/logo/gav.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "vip디자인",
+            img: "images/logo/vip.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "헨지",
+            img: "images/logo/henzy.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "하이마트",
+            img: "images/logo/himart.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "LG전자",
+            img: "images/logo/lg.png"
         },
         {
-            title: "삼성전자",
-            img: "images/item/appliance.jpg"
+            title: "미러클",
+            img: "images/logo/mglass.png"
         },
+        {
+            title: "싱크리더",
+            img: "images/logo/sinkleader.png"
+        },
+        {
+            title: "니치039",
+            img: "images/logo/nichy.png"
+        },
+        {
+            title: "탄성플러스",
+            img: "images/logo/plus.png"
+        }
     ];
 
     const shopHalfLength = Math.ceil(shopDataList.length / 2);
