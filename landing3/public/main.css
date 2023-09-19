@@ -1060,6 +1060,7 @@ h3 {
         #section08 .content .payment .box {
             width: 80px;
             height: 80px;
+            min-width: 80px;
             background-color: var(--color-background-box-light);
             border-radius: var(--bord-radius-all);
             margin-bottom: 20px;

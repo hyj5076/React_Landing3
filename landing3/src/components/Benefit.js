@@ -6,35 +6,35 @@ function Benefit() {
     const benefitDataList = [
         {
             title: "무선 LED 무드등 증정",
-            img: "images/item/appliance.jpg"
+            img: "images/gift/led.jpg"
         },
         {
-            title: "무선 LED 무드등 증정",
-            img: "images/item/appliance.jpg"
+            title: "박람회 할인권",
+            img: "images/gift/sail.jpg"
         },
         {
-            title: "무선 LED 무드등 증정",
-            img: "images/item/appliance.jpg"
+            title: "부엌 인테리어 할인",
+            img: "images/gift/kitchen.jpg"
         },
         {
-            title: "무선 LED 무드등 증정",
-            img: "images/item/appliance.jpg"
+            title: "커튼 무료 설치",
+            img: "images/gift/curtain.jpg"
         },
         {
-            title: "무선 LED 무드등 증정",
-            img: "images/item/appliance.jpg"
+            title: "화재보험",
+            img: "images/gift/fire.jpg"
         },
         {
-            title: "무선 LED 무드등 증정",
-            img: "images/item/appliance.jpg"
+            title: "욕실 나노코팅 무상시공",
+            img: "images/gift/bath.jpg"
         },
         {
-            title: "무선 LED 무드등 증정",
-            img: "images/item/appliance.jpg"
+            title: "싱크대 나노코팅 무상시공",
+            img: "images/gift/sink.jpg"
         },
         {
-            title: "무선 LED 무드등 증정",
-            img: "images/item/appliance.jpg"
+            title: "드레스룸 콤비 블라인드 무상시공",
+            img: "images/gift/dress.jpg"
         }
     ];
 
