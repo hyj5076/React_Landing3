@@ -11,6 +11,16 @@ function Schedule() {
 
         window.open(mapLink, '_blank');
     };
+
+    // 주소 복사 기능
+    const copyAddress = () => {
+        const addressElement = document.querySelector('#myAddress');
+        // div의 내용(textContent)을 복사한다.
+        window.navigator.clipboard.writeText(addressElement.textContent).then(() => {
+            // 복사가 완료되면 호출된다.
+            alert("복사완료");
+        });
+    };
     
 
   return (
@@ -47,7 +57,7 @@ function Schedule() {
                         </div>
                         <div class="txt">
                             <h5>장소</h5>
-                            <p><span id="myAddress">경기 수원시 영통구 월드컵로 206</span><a id="saveButton"><i class="bi bi-subtract"></i></a></p>
+                            <p><span id="myAddress">경기 수원시 영통구 월드컵로 206</span><a href="#" id="saveButton" onClick={(e) => {e.preventDefault(); copyAddress();}}><i class="bi bi-subtract"></i></a></p>
                             <p>(아주대학교 체육관)</p>
                         </div>
                     </div>

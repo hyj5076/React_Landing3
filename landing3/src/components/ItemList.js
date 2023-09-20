@@ -3,7 +3,6 @@ import { useMoreButtonFunction } from './MoreFunction';
 import { useSnapFunction } from './SnapFunction';
 
 function ItemList() {
-    useSnapFunction('#section02 .content');
 
     const itemDataList = [
         { 
@@ -102,16 +101,19 @@ function ItemList() {
             title: "나노코팅",
             img: "../images/item/nano_coating.jpg"
         }
-      ];
+    ];
 
-      const {
-        displayItems,
-        moreButtonVisible,
-        closeButtonVisible,
-        showMore,
-        close
-      } = useMoreButtonFunction(itemDataList, 8);
+    // 콘텐츠 8개씩 보기
+    const {
+    displayItems,
+    moreButtonVisible,
+    closeButtonVisible,
+    showMore,
+    close
+    } = useMoreButtonFunction(itemDataList, 8);
 
+    // 스냅 기능
+    useSnapFunction('#section02 .content');
 
     // dataList를 두 부분으로 나눔
     const halfLength = Math.ceil(displayItems.length / 2);
