@@ -1,11 +1,9 @@
 import './App.css';
 import { useMoreButtonFunction } from './MoreFunction';
 import { useSnapFunction } from './SnapFunction';
-import { useState, useEffect } from 'react';
 
 function ItemList() {
     useSnapFunction('#section02 .content');
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const itemDataList = [
         { 
@@ -106,29 +104,14 @@ function ItemList() {
         }
       ];
 
-    // 화면 너비 감지
-    useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+      const {
+        displayItems,
+        moreButtonVisible,
+        closeButtonVisible,
+        showMore,
+        close
+      } = useMoreButtonFunction(itemDataList, 8);
 
-    const moreButtonFunctionValues = useMoreButtonFunction(itemDataList, 8);
-  
-    // 700px 이상일 때만 적용하기
-    const {
-      displayItems,
-      moreButtonVisible,
-      closeButtonVisible,
-      showMore,
-      close,
-    } = windowWidth >= 700 ? moreButtonFunctionValues : {
-      displayItems: itemDataList,
-      moreButtonVisible: false,
-      closeButtonVisible: false,
-      showMore: () => {},
-      close: () => {},
-    };
 
     // dataList를 두 부분으로 나눔
     const halfLength = Math.ceil(displayItems.length / 2);

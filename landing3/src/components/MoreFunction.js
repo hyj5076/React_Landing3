@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-// 더보기 버튼
 export const useMoreButtonFunction = (initialItems, n) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [displayItems, setDisplayItems] = useState(initialItems.slice(0, n));
   const [hiddenItems, setHiddenItems] = useState(initialItems.slice(n));
   const [moreButtonVisible, setMoreButtonVisible] = useState(hiddenItems.length > 0);
   const [closeButtonVisible, setCloseButtonVisible] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const showMore = () => {
     const newHiddenItems = hiddenItems.slice(n);
@@ -34,13 +40,21 @@ export const useMoreButtonFunction = (initialItems, n) => {
     }
   };
 
-  return {
-    displayItems,
-    moreButtonVisible,
-    closeButtonVisible,
-    showMore,
-    close,
-  };
+  const responsiveValues = windowWidth >= 700 
+    ? {
+      displayItems,
+      moreButtonVisible,
+      closeButtonVisible,
+      showMore,
+      close
+    }
+    : {
+      displayItems: initialItems,
+      moreButtonVisible: false,
+      closeButtonVisible: false,
+      showMore: () => {},
+      close: () => {},
+    };
+
+  return responsiveValues;
 };
-
-

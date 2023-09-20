@@ -1,7 +1,9 @@
 import './App.css';
 import { useMoreButtonFunction } from './MoreFunction';
+import { useSnapFunction } from './SnapFunction';
 
 function Benefit() {
+    useSnapFunction('#section04 .content');
     
     const benefitDataList = [
         {
@@ -38,13 +40,14 @@ function Benefit() {
         }
     ];
 
+    // 화면 너비 감지
     const {
         displayItems,
         moreButtonVisible,
         closeButtonVisible,
         showMore,
-        close,
-      } = useMoreButtonFunction(benefitDataList, 6);  
+        close
+      } = useMoreButtonFunction(benefitDataList, 6);
 
 
     return (

@@ -135,6 +135,7 @@ legend {
     --color-white-op20: rgba(255, 255, 255, 0.2);
     /* 포인트 색상 */
     --color-point: var(--color-blue);
+    --color-op-point: var(--color-blue-op05);
     /* 배경 색상 */
     --color-background: var(--color-gray100);
     --color-background-button-op: var(--color-blue-op40);
@@ -1272,29 +1273,31 @@ h3 {
 @media (max-width:700px) {
     /* 스크롤바의 너비 */
     ::-webkit-scrollbar {
-        width: 2px;
+        width: 1px;
     }
 
     /* 스크롤바 트랙의 배경색 */
-    ::-webkit-scrollbar-track {
+    /* ::-webkit-scrollbar-track {
         background-color: var(--color-op-point);
-    }
+    } */
 
     /* 스크롤바 썸의 배경색 */
     ::-webkit-scrollbar-thumb {
         background-color: var(--color-op-point);
+        border-radius: 10px;
+        border: .1px solid var(--color-blue-op20);
     }
 
     /* 수평 스크롤바 스타일링 */
     /* 스크롤바의 높이 */
     ::-webkit-scrollbar-horizontal {
-        height: 2px;
+        height: 1px;
     }
 
     /* 수평 스크롤바 썸의 배경색 */
-    ::-webkit-scrollbar-thumb:horizontal {
+    /* ::-webkit-scrollbar-thumb:horizontal {
         background-color: var(--color-op-point);
-    }
+    } */
 }
 
 
