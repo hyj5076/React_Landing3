@@ -1,4 +1,5 @@
 import './App.css';
+import ShowDdayFunction from './showDdayFunction';
 
 function Schedule() {
 
@@ -36,14 +37,7 @@ function Schedule() {
 
                 <div class="content">
                     <div class="date date0">
-                        <div style={{display: 'none'}}>
-                            <input type="date" id="startDayInput" value="2023-10-21" />
-                            <input type="date" id="endDayInput" value="2023-10-22" />
-                        </div>
-                        <div class="icon">
-                            <a href=""><i id="calendarIcon" class="bi bi-calendar-fill"></i></a>
-                            <div class="calendar" id="calendar"></div>
-                        </div>
+                        <ShowDdayFunction />
                         <div class="txt">
                             <h5>일정</h5>
                             <p>2023</p>
