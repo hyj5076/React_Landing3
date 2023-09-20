@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 
 function Header() {
   const [navVisible, setNavVisible] = useState(false);

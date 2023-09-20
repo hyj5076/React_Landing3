@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import { Link } from 'react-router-dom';
 
 function Main() {
     const [sectionHeight, setSectionHeight] = useState(null);
@@ -49,7 +49,9 @@ function Main() {
                             <p className="exhibition">입주전시회</p>
                             <p className="date">2023. 10. 21 토 - 10. 22 일</p>
                             <p className="time">10 AM - 6 PM</p>
-                            <div className="btn"><a href="sub/booking.html">참가신청</a></div>
+                            <div className="btn">
+                                <Link className="submit_btn" to="/submit">참가신청</Link>
+                            </div>
                         </div>
                     </div>
                 </div>

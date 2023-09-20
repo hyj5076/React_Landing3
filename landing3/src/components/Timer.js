@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 
 function Timer() {
     const exhibitionDate = new Date('2023-10-21T10:00:00');

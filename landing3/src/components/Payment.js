@@ -1,5 +1,3 @@
-import './App.css';
-
 function Payment() {
   return (
     <div id="main">

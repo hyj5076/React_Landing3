@@ -1,5 +1,3 @@
-import './App.css';
-
 function Event() {
   return (
     <div id="main">

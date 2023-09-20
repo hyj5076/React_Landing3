@@ -1,4 +1,3 @@
-import './App.css';
 import ShowDdayFunction from './showDdayFunction';
 
 function Schedule() {

@@ -1,4 +1,3 @@
-import './App.css';
 import { useMoreButtonFunction } from './MoreFunction';
 import { useSnapFunction } from './SnapFunction';
 

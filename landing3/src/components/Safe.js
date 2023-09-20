@@ -1,5 +1,3 @@
-import './App.css';
-
 function Safe() {
   return (
     <div id="main">
