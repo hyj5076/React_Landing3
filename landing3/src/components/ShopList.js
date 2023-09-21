@@ -142,8 +142,8 @@ function ShopList() {
     return (
         <div id="main">
             <section id="section03">
-                <div class="inner padding">
-                    <div class="title">
+                <div className="inner padding">
+                    <div className="title">
                         <div>
                             <h3>참여업체</h3>
                             <p>1000여 개의<br />
@@ -151,19 +151,19 @@ function ShopList() {
                         </div>
                     </div>
 
-                    <div class="content flow-container roller-wrap">
-                        <div class="flow-text slider-container roller">
-                            <div class="shop flow-wrap">
+                    <div className="content flow-container roller-wrap">
+                        <div className="flow-text slider-container roller">
+                            <div className="shop flow-wrap">
                                 {shopFirstHalf.map((shop) => (
                                     <div>
-                                        <div class="shopimg"><img src={shop.img} alt={shop.title} /></div>
+                                        <div className="shopimg"><img src={shop.img} alt={shop.title} /></div>
                                     </div>
                                 ))}
                             </div>
-                            <div class="shop flow-wrap">   
+                            <div className="shop flow-wrap">   
                                 {shopSecondHalf.map((shop) => (
                                     <div>
-                                        <div class="shopimg"><img src={shop.img} alt={shop.title} /></div>
+                                        <div className="shopimg"><img src={shop.img} alt={shop.title} /></div>
                                     </div>
                                 ))}
                             </div>

@@ -43,6 +43,7 @@ h3 {
 
 section {
     display: flex;
+    align-items: center;
 }
 
 
@@ -58,11 +59,11 @@ section {
     margin-bottom: 20px;
 }
 
-#section00 .style0 {
+/* #section00 .style0 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #section00 .style1 {
     height: 100vh;

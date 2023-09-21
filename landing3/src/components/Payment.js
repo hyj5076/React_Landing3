@@ -5,8 +5,8 @@ function Payment() {
   return (
     <div id="main">
         <section id="section08">
-              <div class="inner padding">
-                  <div class="title">
+              <div className="inner padding">
+                  <div className="title">
                       <div>
                           <h3>결제방법</h3>
                           <p>믿을 수 있는
@@ -14,11 +14,11 @@ function Payment() {
                       </div>
                   </div>
 
-                  <div class="content">
-                      <div class="payment">
+                  <div className="content">
+                      <div className="payment">
                           <ul>
                               <li>
-                                  <div class="box"><i class="bi bi-coin"></i></div>
+                                  <div className="box"><i className="bi bi-coin"></i></div>
                                   <div>
                                       <h4>계약금 상한제</h4>
                                       <p>입주예정자(계약자)에게
@@ -28,7 +28,7 @@ function Payment() {
                                   </div>
                               </li>
                               <li>
-                                  <div class="box"><i class="bi bi-credit-card-fill"></i></div>
+                                  <div className="box"><i className="bi bi-credit-card-fill"></i></div>
                                   <div>
                                       <h4>카드결제 가능</h4>
                                       <p>카드결제 시 현금과 동일한 가격으로 결제
@@ -37,7 +37,7 @@ function Payment() {
                                   </div>
                               </li>
                               <li>
-                                  <div class="box"><i class="bi bi-file-earmark-text-fill"></i></div>
+                                  <div className="box"><i className="bi bi-file-earmark-text-fill"></i></div>
                                   <div>
                                       <h4>현금영수증 의무 발행</h4>
                                       <p>현금영수증 또는 세금계산서 의무 발행</p>

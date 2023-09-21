@@ -2,7 +2,7 @@
     섹션 : 고객센터
    --------------------------------------------- */
 
-   #section {
+#section {
     background-color: var(--color-background);
 }
 
@@ -10,7 +10,6 @@
         justify-content: center;
         align-items: center;
     }
-
 
     #section .content .call {
         width: 100%;

@@ -124,18 +124,18 @@ function ItemList() {
     return (
         <div id="main">
             <section id="section02">
-                <div class="inner padding">
-                    <div class="title">
+                <div className="inner padding">
+                    <div className="title">
                         <div>
                             <h3>참여품목</h3>
                             <p>입주를 위한<br />모든 것이 한곳에!</p>
                         </div>
                     </div>
                     
-                    {moreButtonVisible && <button onClick={showMore}><i class="bi bi-plus-circle-fill" id="moreButton02"></i></button>}
-      {closeButtonVisible && <button onClick={() => close('section02')}><i class="bi bi-dash-circle-fill" id="closeButton02"></i></button>}
+                    {moreButtonVisible && <button onClick={showMore}><i className="bi bi-plus-circle-fill" id="moreButton02"></i></button>}
+      {closeButtonVisible && <button onClick={() => close('section02')}><i className="bi bi-dash-circle-fill" id="closeButton02"></i></button>}
 
-                    <div class="content">
+                    <div className="content">
                         <div>
                             <div className="item">
                                 {itemFirstHalf.map((item, index) => (
