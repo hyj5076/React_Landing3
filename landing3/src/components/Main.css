@@ -1,0 +1,72 @@
+/* ---------------------------------------------
+    섹션01 : 메인페이지
+   --------------------------------------------- */
+
+#section01 .style {
+    /* Main.js에서 mainStyle 외부객체로 정의 */
+    /* background: url('../images/background.jpg') center center no-repeat;
+    background-size: cover; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section01 .title {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--color-background-main);
+    transition: transform 0.4s ease-out;
+}
+
+    #section01 .title > div {
+        width: 100%;
+        border: var(--bord-op-solid);
+        border-radius: var(--bord-radius-all);
+        padding: 60px 0;
+        /* background-color: var(--color-background-main); */
+    }
+
+#section01 h1 {
+    padding-bottom: 10px;
+    font-size: var(--font-large);
+    font-weight: 500;
+    color: #fff;
+}
+
+#section01 p {
+    color: var(--color-main);
+}
+
+#section01 .exhibition {
+    font-size: 3.6rem;
+    font-weight: 600;
+    padding-bottom: 40px;
+    color: #0062a9;
+    text-shadow: 1px 1px 1px #ddd;
+}
+
+#section01 .date {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+
+#section01 .time {
+    font-size: 1.8rem;
+    padding-bottom: 40px;
+    font-weight: 400;
+}
+
+.title .btn a {
+    display: inline-block;
+    width: 60%;
+    padding: 15px 0;
+    background-color: var(--color-background-button-op);
+    border: var(--bord-solid);
+    color: var(--color-white);
+    font-size: var(--font-button);
+    border-radius: var(--bord-radius-all);
+    text-align: center;
+}

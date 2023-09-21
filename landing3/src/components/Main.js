@@ -1,3 +1,5 @@
+import './Common.css';
+import './Main.css';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -39,10 +41,17 @@ function Main() {
         };
     }, []);
 
+    // 스타일을 외부 객체로 정의
+    const mainStyle = {
+        height: sectionHeight,
+        background: "url('/images/background.jpg') center center no-repeat",
+        backgroundSize: "cover"
+    };
+
     return (
         <div id="main">
             <section id="section01">
-                <div className="style active" style={{ height: sectionHeight }}>
+                <div className="style active" style={mainStyle}>
                     <div className="title">
                         <div className="inner">
                             <h1>힐스테이트 푸르지오 수원</h1>

@@ -10,6 +10,7 @@
 
 /* 타이틀 */
 
+
 /* ==========================================================================
     List
 
@@ -17,7 +18,7 @@
     2. Interactive
     3. root 
     4. Header
-    5. Sub
+    5. Main
     6. Footer
    ==========================================================================
 */
@@ -83,22 +84,21 @@ legend {
 }
 
 
-
 /* ==========================================================================
     2.Interactive
    ==========================================================================
 */
 
 .inner {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
-    @media (max-width:500px) {
-        .inner {
-            max-width: calc(100% - 40px);
-        }
+@media (max-width:700px) {
+    .inner {
+        max-width: calc(100% - 40px);
     }
+}
 
 
 /* ==========================================================================
@@ -108,43 +108,34 @@ legend {
 
 /* ----- 색상 ----- */
 
-:root {    
+:root {
     /* 공통 */
     --color-black: #000;
     --color-white: #fff;
-
     --color-blue: #0071C3;
-    --color-blue100: #E9F4FF;
     --color-green: #007F92;
-    
     --color-gray100: #f9f9f9;
     --color-gray200: #f5f5f5;
     --color-gray300: #eeeeee;
     --color-gray400: #D6DBDF;
-
     --color-black200: #9ba4aa;
     --color-black300: #72777a;
     --color-black400: #5F686F;
     --color-black600: #3A4045;
     --color-black900: #273030;
-
     /* 투명도 */
     --color-blue-op05: rgba(0, 113, 195, 0.05);
     --color-blue-op20: rgba(0, 113, 195, 0.2);
     --color-blue-op40: rgba(0, 113, 195, 0.4);
     --color-blue-op60: rgba(0, 113, 195, 0.6);
-
     --color-black-op25: rgba(0, 0, 0, 0.25);
-
     --color-white-op80: rgba(255, 255, 255, 0.8);
     --color-white-op70: rgba(255, 255, 255, 0.7);
     --color-white-op60: rgba(255, 255, 255, 0.6);
     --color-white-op20: rgba(255, 255, 255, 0.2);
-
     /* 포인트 색상 */
     --color-point: var(--color-blue);
-    --color-op-point: var(--color-blue100);
-
+    --color-op-point: var(--color-blue-op05);
     /* 배경 색상 */
     --color-background: var(--color-gray100);
     --color-background-button-op: var(--color-blue-op40);
@@ -152,21 +143,16 @@ legend {
     --color-background-box: var(--color-gray100);
     --color-background-box-light: var(--color-white);
     --color-background-main: var(--color-black-op25);
-
     /* 폰트 색상 */
     --color-main: var(--color-white);
-
     --color-title: var(--color-point);
     --color-subtitle: var(--color-black);
     --color-text: var(--color-black300);
     --color-content-text: var(--color-black600);
-
     --color-button: var(--color-white);
     --color-box: var(--color-white);
-
     /* 아이콘 색상 */
     --color-icon: var(--color-green);
-
     /* 테두리 색상 */
     --color-solid-box: var(--color-gray300);
     --color-solid-main: var(--color-white-op60);
@@ -183,13 +169,13 @@ legend {
     --font-semi-large: 1.8rem;
     --font-large: 2rem;
     --font-extra: 2.2rem;
-
     --font-title: var(--font-medium);
     --font-subtitle: var(--font-extra);
     --font-text: var(--font-semi-small);
     --font-icon: var(--font-tiny);
     --font-button: var(--font-medium);
 }
+
 
 /* ----- 글씨체 ----- */
 
@@ -205,7 +191,7 @@ legend {
 :root {
     --bord-solid: var(--color-white) 1px solid;
     --bord-op-solid: var(--color-solid-main) 1px solid;
-    --bord-op-point: var(--color-op-point) 1px solid;   
+    --bord-op-point: var(--color-op-point) 1px solid;
     --bord-solid-box: var(--color-solid-box) 1px solid;
 }
 
@@ -231,24 +217,127 @@ legend {
 
 
 /* ==========================================================================
-    4. Header 
+    4.Header 
    ==========================================================================
 */
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+    header .logo {
+        border-bottom: var(--bord-op-solid);
+        transition: background 0.4s ease;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+        z-index: 9;
+        background: #fff;
+    }
+
+
+    header .logo > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo p a {
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-family: var(--fam-logo);
+        color: var(--color-point);
+        height: 60px;
+    }
+
+    header .logo .nav_btn {
+        font-size: 3rem;
+        color: var(--color-white);
+        text-shadow: 1px 1px 1px var(--color-gray400);
+    }
+
+        header .logo .nav_btn .bi-x {
+            color: var(--color-black200);
+            text-shadow: none;
+        }
+
+    header.active-click .logo {
+        border-bottom: var(--bord-solid);
+    }
+
+    header.active-scroll {
+        box-shadow: var(--box-shadow-100);
+    }
+
+        header.active-scroll .logo {
+            background: var(--color-white-op70);
+        }
+
+            header.active-scroll .logo .nav_btn {
+                color: var(--color-black200);
+                text-shadow: none;
+            }
+
+    header.active-white {
+        background: #fff;
+        box-shadow: var(--box-shadow-100);
+    }
+
+    header.active-white .logo {
+        background: #fff;
+    }
+
+
+
+/* ---------------------------------------------
+    네비게이션
+   --------------------------------------------- */
+
+.menu {
+    width: 100%;
+}
+
+    .menu > ul {
+        padding: 20px 0;
+    }
+
+        .menu > ul > li > a {
+            padding: 20px;
+            color: var(--color-text);
+            font-weight: 500;
+        }
+
+        .menu > ul > li:hover {
+            background-color: #f5f5f5;
+        }
+
+
 
 /* ==========================================================================
-    5. Sub
+    5.Main
    ==========================================================================
 */
 
 /* ---------------------------------------------
     공통부문
-   ---------------------------------------------*/
+   --------------------------------------------- */
 
 #wrap {
+    overflow: hidden;
     color: var(--color-text);
     line-height: 1.4;
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
+}
+
+.padding {
+    padding: 60px 0;
 }
 
 h2, h3 {
@@ -258,198 +347,21 @@ h2, h3 {
 
 h3 {
     font-size: var(--font-title);
-    padding: 10px 0;
+    padding: 20px 0 5px;
 }
 
-section {
-    display: flex;
-}
-
-
-/* ---------------------------------------------
-    섹션 : 서브페이지
-   ---------------------------------------------*/
-
-#section00 .logo a {
-    font-weight: 900;
-    font-family: var(--fam-logo);
-    color: var(--color-point);
-    font-size: var(--font-title);
-    margin-bottom: 20px;
-}
-
-#section00 .style0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#section00 .style1 {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-#section00 .title {
-    display: block;
-    text-align: center;
-    padding: 20px 0;
-}
-
-#section00 h1 {
-    font-size: var(--font-large);
-    font-weight: 500;
-}
-
-#section00 .exhibition {
-    font-size: 2.6rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-
-#section00 .title p {
+.title p {
     font-size: var(--font-subtitle);
     color: var(--color-subtitle);
     font-weight: 600;
 }
 
-#section00 .input_text {
-    margin: 20px 0;
+.title {
+    display: flex;
+    margin-bottom: 40px;
 }
 
-#section00 input[type="text"] {
-    touch-action: manipulation;
-    width: 80%;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: var(--color-gray200);
-    margin-bottom: 10px;
+.content {
+    display: flex;
+    margin-bottom: 40px;
 }
-
-#section00 input[type="checkbox"] {
-    scale: 1.1;
-    margin: 0 5px;
-}
-
-    .active-popup {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
-      }
-      
-    .active-popup.open {
-        max-height: 500px; /* 원하는 높이로 설정 */
-        opacity: 1;
-    }
-
-  
-#section00 .agree {
-    padding: 0 20px;
-}
-
-#section00 .agree p {
-    font-size: var(--font-small);
-    color: var(--color-black600);
-    font-weight: 300;
-    text-align: left;
-    padding-bottom: 5px;
-}
-
-#section00 .agree h3 {
-    color: var(--color-black600);
-}
-
-#section00 .agree h3 span {
-    color: var(--color-point);
-    cursor: pointer;
-    margin-left: 5px;
-    font-size: var(--font-small);
-    text-decoration: underline;
-}
-
-#section00 .agree i {
-    transform: rotate(0);
-    padding: 5px;
-    cursor: pointer;
-    color: var(--color-point);
-}
-
-#section00 .btn {
-    margin-top: 20px;
-}
-
-#section00 .btn .submit_btn {
-    display: inline-block;
-    width: 80%;
-    padding: 15px 0;
-    background-color: var(--color-op-point);
-    border: var(--bord-op-solid);
-    color: var(--color-point);
-    font-weight: 600;
-    font-size: var(--font-button);
-    border-radius: var(--bord-radius-all);
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-#section00 .btn .submit_btn:first-child {
-    background-color: var(--color-point);
-    color: var(--color-white);
-}
-
-    @media (max-width:420px) {
-        #section00 {
-            padding: 40px 0;
-        }
-
-        #section00 .style0 {
-            align-items: baseline;
-        }
-
-        #section00 p {
-            padding-bottom: 15px;
-        }
-
-        #section00 h1 {
-            padding-bottom: 5px;
-        }
-
-        #section00 .title p {
-            font-size: var(--font-medium);
-        }
-
-        #section00 input[type="text"] {
-            width: 100%;
-        }
-
-        #section00 .btn {
-            margin-bottom: 20px;
-        }
-
-        #section00 .btn .submit_btn {
-            width: 100%;
-        }
-
-        #section00 .agree h3 {
-            font-size: var(--font-semi-small);
-        }
-
-        #section00 .agree p {
-            font-size: var(--font-tiny);
-        }
-    }
-
-
-/* ---------------------------------------------
-    fail
-   ---------------------------------------------*/
-
-   .result {
-        padding: 20px 0;
-   }
-
-   .result p {
-        margin: 10px 0;
-   }

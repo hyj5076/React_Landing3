@@ -1,3 +1,5 @@
+import './Common.css';
+
 function Contact() {
   return (
     <div id="main">

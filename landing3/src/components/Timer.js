@@ -1,3 +1,4 @@
+import './Common.css';
 import React, { useEffect, useState } from 'react';
 
 function Timer() {

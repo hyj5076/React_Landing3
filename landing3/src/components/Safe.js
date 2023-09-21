@@ -1,3 +1,5 @@
+import './Common.css';
+
 function Safe() {
   return (
     <div id="main">

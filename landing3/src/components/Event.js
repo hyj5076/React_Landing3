@@ -1,3 +1,5 @@
+import './Common.css';
+
 function Event() {
   return (
     <div id="main">

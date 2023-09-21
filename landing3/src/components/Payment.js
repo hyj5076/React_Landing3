@@ -1,3 +1,4 @@
+import './Common.css';
 function Payment() {
   return (
     <div id="main">

@@ -1,5 +1,6 @@
 import { useMoreButtonFunction } from './MoreFunction';
 import { useSnapFunction } from './SnapFunction';
+import './Common.css';
 
 function Benefit() {
     

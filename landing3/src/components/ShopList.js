@@ -1,3 +1,4 @@
+import './Common.css';
 import { useEffect } from 'react';
 
 function ShopList() {  
