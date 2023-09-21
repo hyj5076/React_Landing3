@@ -103,6 +103,7 @@ section {
     touch-action: manipulation;
     width: 80%;
     padding: 20px;
+    border: 1px solid var(--color-gray400);
     border-radius: 5px;
     background-color: var(--color-gray200);
     margin-bottom: 10px;
@@ -161,7 +162,7 @@ section {
     margin-top: 20px;
 }
 
-#section00 .btn .submit_btn {
+#section00 .btn a {
     display: inline-block;
     width: 80%;
     padding: 15px 0;
@@ -175,7 +176,7 @@ section {
     margin-bottom: 10px;
 }
 
-#section00 .btn .submit_btn:first-child {
+#section00 .btn .submit_btn {
     background-color: var(--color-point);
     color: var(--color-white);
 }
