@@ -1,5 +1,6 @@
 import './Common.css';
 import './Timer.css';
+import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 function Timer() {
@@ -60,7 +61,7 @@ function Timer() {
                                         <div className="subcircle"></div>
                                     </div>
                                     <div className="submitbtn">
-                                        <a href="sub/booking.html">참가신청</a>
+                                        <Link to="/submit">참가신청</Link>
                                     </div>
                                 </div>
                             </div>

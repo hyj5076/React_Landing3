@@ -10,6 +10,7 @@ import Payment from './Payment';
 import Timer from './Timer';
 import Contact from './Contact';
 import Submit from './Submit';
+import Success from './Success';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -33,6 +34,7 @@ function App() {
           </>
         } />
         <Route path="/submit" element={<Submit />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
     </Router>
   );

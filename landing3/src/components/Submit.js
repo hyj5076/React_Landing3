@@ -8,7 +8,7 @@ function Submit() {
     <section id="section00">
         <div className="style1 inner-sub">
         <div className="title">
-                <p className="logo"><a href="../index.html">EDEN C&S</a></p>
+                <p className="logo"><Link to="/" >EDEN C&S</Link></p>
                 <h1>힐스테이트 푸르지오 수원</h1>
                 <p className="exhibition">입주전시회 사전예약</p>
 
@@ -30,9 +30,8 @@ function Submit() {
                     </div>
                 </div>
                 <div className="btn">
-                    <a href="../sub/success.html" onclick="return validateForm()">신청하기</a>
-                    <Link to="/submit">신청하기</Link>
-                    <a href="#" onclick="resetForm()">초기화</a>
+                    <Link to='/Success' onclick="return validateForm()">신청하기</Link>
+                    <Link to="/submit" onclick="resetForm()">초기화</Link>
                 </div>
             </div>
         </div>

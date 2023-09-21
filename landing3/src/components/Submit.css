@@ -227,10 +227,10 @@ section {
     fail
    ---------------------------------------------*/
 
-   .result {
+    .result {
         padding: 20px 0;
-   }
+    }
 
-   .result p {
+    .result p {
         margin: 10px 0;
-   }
+    }
