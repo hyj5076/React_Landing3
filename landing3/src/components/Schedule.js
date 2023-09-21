@@ -1,3 +1,6 @@
+import './Common.css';
+import './Schedule.css';
+
 import ShowDdayFunction from './showDdayFunction';
 
 function Schedule() {
@@ -39,8 +42,8 @@ function Schedule() {
                         <ShowDdayFunction />
                         <div class="txt">
                             <h5>일정</h5>
-                            <p>2023</p>
-                            <p><span>10.21</span> 토 - <span>10.22</span> 일</p>
+                            <p>2023 <span>10.21</span> 토 - <span>10.22</span> 일 </p>
+                            <p>10AM - 6PM</p>
                         </div>
                     </div>
 

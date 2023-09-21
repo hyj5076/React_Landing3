@@ -1,0 +1,74 @@
+/* ---------------------------------------------
+    섹션05 : 경품이벤트
+   --------------------------------------------- */
+
+#section05 {
+    display: block;
+}
+
+#section05 .title {
+    align-items: center;
+}
+
+    #section05 .title .inner {
+        /* padding: 80px 20px 0 20px; */
+        width: 100%;
+    }
+
+#section05 .content {
+    width: 100%;
+}
+
+#section05 .event {
+    width: 100%;
+}
+
+    #section05 .event ul {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+        #section05 .event ul li {
+            background-color: var(--color-background-box);
+            width: calc((100% - 40px)/3);
+            padding: 20px 0;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: var(--bord-radius-all);
+            box-shadow: var(--box-shadow-200);
+        }
+
+            #section05 .event ul li p:nth-child(2):after {
+                content: '●';
+                color: var(--color-blue-op20);
+                font-size: var(--font-icon);
+            }
+
+    #section05 .event h4 {
+        color: var(--color-point);
+    }
+
+        #section05 .event h4 span {
+            font-size: var(--font-large);
+            font-family: var(--fam-number);
+            padding: 0 4px;
+        }
+
+    #section05 .event p {
+        margin-top: 10px;
+        font-size: var(--font-medium);
+    }
+
+@media (max-width:700px) {
+    #section05 .event ul {
+        display: block;
+    }
+
+        #section05 .event ul li {
+            width: 100%;
+        }
+}

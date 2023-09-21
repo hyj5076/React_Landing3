@@ -1,4 +1,5 @@
 import './Common.css';
+import './Contact.css';
 
 function Contact() {
   return (

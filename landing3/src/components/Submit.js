@@ -6,7 +6,7 @@ function Submit() {
   return (
   <div id="main">
     <section id="section00">
-        <div className="style0 inner">
+        <div className="style0 inner-sub">
         <div className="title">
                 <p className="logo"><a href="../index.html">EDEN C&S</a></p>
                 <h1>힐스테이트 푸르지오 수원</h1>

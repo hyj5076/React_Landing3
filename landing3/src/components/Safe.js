@@ -1,4 +1,5 @@
 import './Common.css';
+import './Safe.css';
 
 function Safe() {
   return (

@@ -1,4 +1,5 @@
 import './Common.css';
+import './ItemList.css';
 import { useMoreButtonFunction } from './MoreFunction';
 import { useSnapFunction } from './SnapFunction';
 

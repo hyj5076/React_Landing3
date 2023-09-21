@@ -1,0 +1,87 @@
+/* ---------------------------------------------
+    섹션09 : 사전예약
+   --------------------------------------------- */
+
+   #section09 .title {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#section09 .content {
+    justify-content: center;
+}
+
+    #section09 .content .circle {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        border: var(--bord-solid-box);
+        border-radius: var(--bord-radius-circle);
+        animation: rotate 10s infinite linear;
+    }
+
+    #section09 .content p {
+        font-size: var(--font-extra);
+    }
+
+    #section09 .content span {
+        font-weight: 600;
+        font-size: 5rem;
+    }
+
+#section09 .submitbtn {
+    display: flex;
+    justify-content: center;
+}
+
+    #section09 .submitbtn a {
+        width: 80%;
+        text-align: center;
+        padding: 12px 0;
+        background-color: var(--color-point);
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: var(--font-button);
+        color: var(--color-button);
+        margin-top: 40px;
+    }
+
+.subcircle {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--bord-radius-circle);
+    border: var(--color-blue-op40) 1px solid;
+    background-color: var(--color-blue-op05);
+}
+
+.dday {
+    transform: translateY(100%);
+    margin-top: -300px;
+    padding-top: 90px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: var(--bord-radius-circle);
+    border: var(--bord-solid-box);
+    background-color: var(--color-background-box);
+    box-shadow: var(--box-shadow-300);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

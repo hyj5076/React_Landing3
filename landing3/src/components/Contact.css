@@ -1,0 +1,61 @@
+/* ---------------------------------------------
+    섹션 : 고객센터
+   --------------------------------------------- */
+
+   #section {
+    background-color: var(--color-background);
+}
+
+    #section .title {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #section .content .call {
+        width: 100%;
+    }
+
+        #section .content .call > ul {
+            width: 100%;
+        }
+
+            #section .content .call > ul > li {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 30px 0;
+            }
+
+        #section .content .call .box {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: var(--bord-radius-circle);
+            margin-bottom: 20px;
+            box-shadow: var(--box-shadow-200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #section .content .call .box i {
+                font-size: 4rem;
+            }
+
+    #section .call li:first-child .box i {
+        color: #629D60;
+    }
+
+    #section .call li:nth-child(2) .box i {
+        color: #FFB904;
+    }
+
+    #section .call li:nth-child(3) .box i {
+        color: #4699BC;
+    }
+
+.license p {
+    font-size: var(--font-small);
+    text-align: center;
+}

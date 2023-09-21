@@ -1,19 +1,20 @@
 import './Common.css';
+import './Event.css';
 
 function Event() {
   return (
     <div id="main">
         <section id="section05">
-            <div class="inner padding">
-                <div class="title">
+            <div className="inner padding">
+                <div className="title">
                     <div>
                         <h3>경품이벤트</h3>
                         <p>다양한 경품이 팡팡!</p>
                     </div>
                 </div>
 
-                <div class="content">
-                    <div class="event">
+                <div className="content">
+                    <div className="event">
                         <ul>
                             <li>
                                 <div>
@@ -40,7 +41,7 @@ function Event() {
                     </div>
                 </div>
 
-                <div class="textp">
+                <div className="textp">
                     <p>입주전시회에 오신 입주민분들께 경품응모권을 드립니다.</p>
                     <p>(경품은 입주예정자 카페를 참고하세요!)</p>
                 </div>

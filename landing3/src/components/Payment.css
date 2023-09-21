@@ -1,0 +1,80 @@
+/* ---------------------------------------------
+    섹션08 : 결제방법
+   --------------------------------------------- */
+
+   #section08 {
+    background-color: var(--color-background);
+}
+
+    #section08 .title {
+        align-items: center;
+    }
+
+    #section08 .content .payment {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+        #section08 .content .payment > ul li {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+            #section08 .content .payment > ul li:last-child {
+                margin-bottom: 0;
+            }
+
+        #section08 .content .payment .box {
+            width: 80px;
+            height: 80px;
+            min-width: 80px;
+            background-color: var(--color-background-box-light);
+            border-radius: var(--bord-radius-all);
+            margin-bottom: 20px;
+            box-shadow: var(--box-shadow-200);
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #section08 .content .payment h4 {
+            font-size: var(--font-medium);
+            padding-bottom: 8px;
+            font-weight: 600;
+        }
+
+        #section08 .content .payment p {
+            font-size: var(--font-semi-small);
+        }
+
+    #section08 .payment i {
+        font-size: 3rem;
+    }
+
+    #section08 .payment li:first-child .box i {
+        color: #CC4D4D;
+    }
+
+    #section08 .payment li:nth-child(2) .box i {
+        color: #466EBC;
+    }
+
+    #section08 .payment li:nth-child(3) .box i {
+        color: #FFB904;
+    }
+
+@media (max-width:700px) {
+    #section08 .content .payment h4 {
+        font-size: var(--font-semi-small);
+    }
+
+    #section08 .content p {
+        white-space: pre-line;
+    }
+
+    #section08 .content .payment p {
+        font-size: var(--font-small);
+    }
+}

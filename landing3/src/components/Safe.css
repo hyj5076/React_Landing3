@@ -1,0 +1,60 @@
+/* ---------------------------------------------
+    섹션07 : 안전시설
+   --------------------------------------------- */
+
+#section07 {
+    display: block;
+}
+
+#section07 .title {
+    align-items: center;
+    justify-content: center;
+}
+
+#section07 .content {
+    justify-content: center;
+}
+
+    #section07 .content .icon {
+        width: 100%;
+    }
+
+        #section07 .content .icon > ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+            #section07 .content .icon > ul > li {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+                #section07 .content .icon > ul > li > div {
+                    text-align: center;
+                }
+
+        #section07 .content .icon .box {
+            width: 100px;
+            height: 100px;
+            background-color: var(--color-background-box);
+            border-radius: var(--bord-radius-circle);
+            margin-bottom: 20px;
+            box-shadow: var(--box-shadow-200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+#section07 .icon .box i {
+    font-size: 3.6rem;
+}
+
+#section07 .icon li:first-child .box i {
+    color: #CC4D4D;
+}
+
+#section07 .icon li:nth-child(2) .box i {
+    color: #629D60;
+}
