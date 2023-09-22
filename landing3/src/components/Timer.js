@@ -1,10 +1,10 @@
 import './Common.css';
 import './Timer.css';
 import { Link } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 
 function Timer() {
-    const exhibitionDate = new Date('2023-10-21T10:00:00');
+    const exhibitionDate = useMemo(() => new Date('2023-10-21T10:00:00'), []);
     const [time, setTime] = useState({
         days: 0,
         hours: '00',

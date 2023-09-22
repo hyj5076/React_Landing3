@@ -1,5 +1,6 @@
 import './Common.css';
 import './Schedule.css';
+import { Link } from 'react-router-dom';
 
 import ShowDdayFunction from './showDdayFunction';
 
@@ -21,7 +22,7 @@ function Schedule() {
         // div의 내용(textContent)을 복사한다.
         window.navigator.clipboard.writeText(addressElement.textContent).then(() => {
             // 복사가 완료되면 호출된다.
-            alert("복사완료");
+            alert("주소를 복사했습니다.");
         });
     };
     
@@ -49,11 +50,11 @@ function Schedule() {
 
                     <div className="place">
                         <div className="icon">
-                        <a href="#" onClick={(e) => {e.preventDefault(); goToMap();}}><i className="bi bi-geo-alt-fill"></i></a>
+                        <Link onClick={(e) => {e.preventDefault(); goToMap();}}><i className="bi bi-geo-alt-fill"></i></Link>
                         </div>
                         <div className="txt">
                             <h5>장소</h5>
-                            <p><span id="myAddress">경기 수원시 영통구 월드컵로 206</span><a href="#" id="saveButton" onClick={(e) => {e.preventDefault(); copyAddress();}}><i className="bi bi-subtract"></i></a></p>
+                            <p><span id="myAddress">경기 수원시 영통구 월드컵로 206</span><Link id="saveButton" onClick={(e) => {e.preventDefault(); copyAddress();}}><i className="bi bi-subtract"></i></Link></p>
                             <p>(아주대학교 체육관)</p>
                         </div>
                     </div>
