@@ -11,7 +11,7 @@ import Timer from './Timer';
 import Contact from './Contact';
 import Submit from './Submit';
 import Success from './Success';
-import Fail from './fail';
+//import Fail from './fail';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -36,7 +36,7 @@ function App() {
         } />
         <Route path="/submit" element={<Submit />} />
         <Route path="/success" element={<Success />} />
-        <Route path="/fail" element={<Fail />} />
+        {/* <Route path="/fail" element={<Fail />} /> */}
       </Routes>
     </Router>
   );
