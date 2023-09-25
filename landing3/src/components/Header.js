@@ -75,12 +75,12 @@ function Header() {
         <nav>
           <div className="menu">
             <ul>
-              <li><a href="#section02" className="inner" onClick={(e) => handleMenuClick(e, '#section02')}>참여품목</a></li>
-              <li><a href="#section04" className="inner" onClick={(e) => handleMenuClick(e, '#section04')}>입주민혜택</a></li>
-              <li><a href="#section06" className="inner" onClick={(e) => handleMenuClick(e, '#section06')}>전시회안내</a></li>
-              <li><a href="#section08" className="inner" onClick={(e) => handleMenuClick(e, '#section08')}>결제방법</a></li>
-              <li><a href="#section09" className="inner" onClick={(e) => handleMenuClick(e, '#section09')}>사전예약</a></li>
-              <li><a href="#section" className="inner" onClick={(e) => handleMenuClick(e, '#section')}>고객센터</a></li>
+              <li><button className="inner" onClick={(e) => handleMenuClick(e, '#section02')}>참여품목</button></li>
+              <li><button className="inner" onClick={(e) => handleMenuClick(e, '#section04')}>입주민혜택</button></li>
+              <li><button className="inner" onClick={(e) => handleMenuClick(e, '#section06')}>전시회안내</button></li>
+              <li><button className="inner" onClick={(e) => handleMenuClick(e, '#section08')}>결제방법</button></li>
+              <li><button className="inner" onClick={(e) => handleMenuClick(e, '#section09')}>사전예약</button></li>
+              <li><button className="inner" onClick={(e) => handleMenuClick(e, '#section')}>고객센터</button></li>
             </ul>
           </div>
         </nav>

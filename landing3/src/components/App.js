@@ -15,7 +15,6 @@ import Success from './Success';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 function App() {
   return (
     <Router>
