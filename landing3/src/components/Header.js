@@ -65,7 +65,7 @@ function Header() {
       <header className={`${scrollActive ? 'active-scroll' : ''}`}>
         <div className="logo">
           <div className="inner">
-            <p><a href="#">EDEN<br />C&S</a></p>
+          <p><button className="logoButton">EDEN<br />C&S</button></p>
             <div className="nav_btn" onClick={toggleNav}>
               <i className={`bi ${navVisible ? 'bi-x' : 'bi-list'}`}></i>
             </div>

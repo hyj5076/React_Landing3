@@ -38,12 +38,19 @@
         #section06 .content .icon {
             font-size: var(--font-icon);
             color: var(--color-icon);
-            text-align: right;
             border-bottom: var(--bord-solid-box);
             padding: 15px 20px;
+            min-height: 60px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
         }
 
-            #section06 .content .icon a {
+            #section06 .calendar-button {
+                text-align: right;
+            }
+
+            #section06 .content .icon i {
                 color: var(--color-icon);
                 cursor: pointer;
             }
@@ -68,7 +75,6 @@
 
     .place .txt i:hover {
         color: var(--color-point);
-        padding: 0 10px;
     }
 
 

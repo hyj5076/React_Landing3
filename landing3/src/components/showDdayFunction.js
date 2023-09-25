@@ -54,7 +54,9 @@ const ShowDdayFunction = () => {
                 <input id="startDayInput" type="text" value={startDate} readOnly />
                 <input id="endDayInput" type="text" value={endDate} readOnly />
             </div>
-            <button href="#" onClick={(e) => {e.preventDefault(); toggleCalendar();}}><i id="calendarIcon" className="bi bi-calendar-fill"></i></button>
+            <button className="calendar-button" onClick={toggleCalendar}>
+                <i id="calendarIcon" className="bi bi-calendar-fill"></i>
+            </button>
             <div className="calendar" id="calendar"></div>
         </div>
     );
