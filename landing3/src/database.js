@@ -1,10 +1,7 @@
 
-
 /* const client = await MongoClient.connect('DB접속URL~~', { useNewUrlParser: true })
 const db = client.db("forum")
 db.collection().어쩌구~  */
-
-
 
 /* import { MongoClient } from 'mongodb'
 const url = 'DB접속URL~~'

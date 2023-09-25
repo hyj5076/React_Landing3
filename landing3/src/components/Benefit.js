@@ -2,43 +2,9 @@ import './Common.css';
 import './Benefit.css';
 import { useMoreButtonFunction } from './MoreFunction';
 import { useSnapFunction } from './SnapFunction';
+import data from '../benefit.json';
 
 function Benefit() {
-    
-    const benefitDataList = [
-        {
-            title: "무선 LED 무드등 증정",
-            img: "images/gift/led.jpg"
-        },
-        {
-            title: "박람회 할인권",
-            img: "images/gift/sail.jpg"
-        },
-        {
-            title: "부엌 인테리어 할인",
-            img: "images/gift/kitchen.jpg"
-        },
-        {
-            title: "커튼 무료 설치",
-            img: "images/gift/curtain.jpg"
-        },
-        {
-            title: "화재보험",
-            img: "images/gift/fire.jpg"
-        },
-        {
-            title: "욕실 나노코팅 무상시공",
-            img: "images/gift/bath.jpg"
-        },
-        {
-            title: "싱크대 나노코팅 무상시공",
-            img: "images/gift/sink.jpg"
-        },
-        {
-            title: "드레스룸 콤비 블라인드 무상시공",
-            img: "images/gift/dress.jpg"
-        }
-    ];
 
     // 콘텐츠 6개씩 보기
     const {
@@ -47,7 +13,7 @@ function Benefit() {
         closeButtonVisible,
         showMore,
         close
-      } = useMoreButtonFunction(benefitDataList, 6);
+      } = useMoreButtonFunction(data.benefitData, 6);
 
     // 스냅 기능
     useSnapFunction('#section04 .content');
