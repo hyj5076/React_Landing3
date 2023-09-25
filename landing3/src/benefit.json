@@ -1,34 +1,42 @@
 {
     "benefitData": [
         {
+            "id": "b01",
             "title": "무선 LED 무드등 증정",
             "img": "images/gift/led.jpg"
         },
         {
+            "id": "b02",
             "title": "박람회 할인권",
             "img": "images/gift/sail.jpg"
         },
         {
+            "id": "b03",
             "title": "부엌 인테리어 할인",
             "img": "images/gift/kitchen.jpg"
         },
         {
+            "id": "b04",
             "title": "커튼 무료 설치",
             "img": "images/gift/curtain.jpg"
         },
         {
+            "id": "b05",
             "title": "화재보험",
             "img": "images/gift/fire.jpg"
         },
         {
+            "id": "b06",
             "title": "욕실 나노코팅 무상시공",
             "img": "images/gift/bath.jpg"
         },
         {
+            "id": "b07",
             "title": "싱크대 나노코팅 무상시공",
             "img": "images/gift/sink.jpg"
         },
         {
+            "id": "b08",
             "title": "드레스룸 콤비 블라인드 무상시공",
             "img": "images/gift/dress.jpg"
         }

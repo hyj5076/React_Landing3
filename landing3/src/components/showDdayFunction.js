@@ -49,7 +49,7 @@ const ShowDdayFunction = () => {
     };
 
     return (            
-        <div class="icon">
+        <div className="icon">
             <div style={{display: 'none'}}>
                 <input id="startDayInput" type="text" value={startDate} readOnly />
                 <input id="endDayInput" type="text" value={endDate} readOnly />

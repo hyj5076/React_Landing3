@@ -3,6 +3,18 @@ import './ShopList.css';
 import { useEffect } from 'react';
 import data from '../shopList.json';
 
+function ShopItems({ items }) {
+    return (
+        <div className="shop flow-wrap">
+            {items.map((shop) => (
+                <div key={shop.id}>
+                    <div className="shopimg"><img src={shop.img} alt={shop.title} /></div>
+                </div>
+            ))}
+        </div>
+    );
+}
+
 function ShopList() {  
 
     useEffect(() => {
@@ -44,24 +56,12 @@ function ShopList() {
 
                     <div className="content flow-container roller-wrap">
                         <div className="flow-text slider-container roller">
-                            <div className="shop flow-wrap">
-                                {shopFirstHalf.map((shop) => (
-                                    <div>
-                                        <div className="shopimg"><img src={shop.img} alt={shop.title} /></div>
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="shop flow-wrap">   
-                                {shopSecondHalf.map((shop) => (
-                                    <div>
-                                        <div className="shopimg"><img src={shop.img} alt={shop.title} /></div>
-                                    </div>
-                                ))}
-                            </div>
+                            <ShopItems items={shopFirstHalf} />
+                            <ShopItems items={shopSecondHalf} />
                         </div>
                     </div>
 
-                    <div class="textp">
+                    <div className="textp">
                         <p>해당 전시에 참여하는 업체는 위와 같습니다.</p>
                     </div>
                 </div>

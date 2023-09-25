@@ -2,7 +2,7 @@ import Header from './Header';
 import Main from './Main';
 import ItemList from './ItemList';
 import ShopList from './ShopList';
-import Benefit from './Benefit';
+import BenefitList from './Benefit';
 import Event from './Event';
 import Schedule from './Schedule';
 import Safe from './Safe';
@@ -25,7 +25,7 @@ function App() {
             <Main />
             <ItemList />
             <ShopList />
-            <Benefit />
+            <BenefitList />
             <Event />
             <Schedule />
             <Safe />

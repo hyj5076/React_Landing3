@@ -4,6 +4,19 @@ import { useMoreButtonFunction } from './MoreFunction';
 import { useSnapFunction } from './SnapFunction';
 import data from "../itemList.json";
 
+function ItemGroup({ items }) {
+    return (
+        <div className="item">
+            {items.map(item => (
+                <div key={item.id}>
+                    <div className='itemimg'><img src={item.img} alt={item.title} /></div>
+                    <p>{item.title}</p>
+                </div>
+            ))}
+        </div>
+    );
+}
+
 function ItemDataList() {
 
     // 콘텐츠 8개씩 보기
@@ -35,26 +48,12 @@ function ItemDataList() {
                     </div>
                     
                     {moreButtonVisible && <button onClick={showMore}><i className="bi bi-plus-circle-fill" id="moreButton02"></i></button>}
-      {closeButtonVisible && <button onClick={() => close('section02')}><i className="bi bi-dash-circle-fill" id="closeButton02"></i></button>}
+                    {closeButtonVisible && <button onClick={() => close('section02')}><i className="bi bi-dash-circle-fill" id="closeButton02"></i></button>}
 
                     <div className="content">
                         <div>
-                            <div className="item">
-                                {itemFirstHalf.map((item, index) => (
-                                    <div>
-                                        <div className='itemimg'><img src={item.img} alt={item.title} /></div>
-                                        <p key={index}>{item.title}</p>
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="item">
-                                {itemSecondHalf.map((item, index) => (
-                                    <div>
-                                        <div className='itemimg'><img src={item.img} alt={item.title} /></div>
-                                        <p key={index}>{item.title}</p>
-                                    </div>
-                                ))}
-                            </div>
+                            <ItemGroup items={itemFirstHalf} />
+                            <ItemGroup items={itemSecondHalf} />
                         </div>
                     </div>
                 </div>
