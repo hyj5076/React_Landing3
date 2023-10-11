@@ -3,8 +3,8 @@
 
 ## 프로젝트 개요
 * 목적 : 입주전시회 사전예약 랜딩페이지 제작
-* 기간 : 2023.
-* 기여도 : UIUX, Front-end 100% 개인작업
+* 기간 : 2023.09.14 - 09.26 (12일)
+* 기여도 : UIUX 디자인, Front-end 100% 개인작업
 
 ## 기술 스택
 ### 언어
@@ -21,6 +21,7 @@
 * GitHub (버전관리)
 * Netlify (배포)
 * Visual Studio Code (코드에디터)
+* Figma (디자인)
 
 ## 페이지별 주요 기능
 ### 메인 랜딩페이지
@@ -59,6 +60,11 @@
   * Input 숫자만 입력, 입력칸 수 제한
   * Input 입력 후 자동 넘김
   * 모든 입력칸 초기화 버튼
-* 유효성 검사
+* __유효성 검사__
   * checkbox 미체크시 경고창 및 체크박스 내용 펼침
   * 빈칸일 시 경고창 및 해당 칸 포커싱
+
+## 참고 링크
+[웹사이트 방문하기](https://dainty-lily-0b9306.netlify.app/)
+[피그마 UIUX 작업보기](https://www.figma.com/file/XctZukgUN8np1vCRJKhzRF/%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%86%A0%EC%8A%A4?type=design&node-id=0-1&mode=design&t=0x6XRHpTHVaUsSKl-0)
+
