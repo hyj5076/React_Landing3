@@ -12,7 +12,7 @@
 * CSS
 * JavaScript
   
-### 라이브러리&프레임워크
+### 라이브러리 & 프레임워크
 * React
 * React Router
 * Bootstrap
@@ -24,17 +24,31 @@
 
 ## 페이지별 주요 기능
 ### 메인 랜딩페이지
+
 #### Interactive Functions
 * __Navigation__
   * fade-toggle, slide-toggle
 * __Menu__
   * Smooth Scrolling to sections
-* __Main__
-  * Viewport Height Responsive Design
 * __section 참가혜택, 참여품목__
   * 콘텐츠 더보기 버튼
 * __section 참여업체__
-  * Infinite slider 콘텐츠가 자동으로 흐르는 기능
+  * Infinite slider 콘텐츠 자동 흐르기
 * __section 사전예약__
-  * keyframe rotate
-* 
+  * keyframe rotate 360도 회전
+
+#### Technical Features
+* __Main__
+  * Viewport 높이 자동 조정
+  * Mobile 핸드 스냅
+* __전시회 일정/장소__
+  * flatPicker 달력 띄우기, 날짜 표시
+  * 주소 기반으로 구글맵 링크 연결
+  * 주소 복사
+* __section 사전예약__
+  * 남은 기간/시간 카운트다운
+* __section 고객센터__
+  * 전화 연결
+
+### 
+
