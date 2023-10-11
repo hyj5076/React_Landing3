@@ -65,6 +65,6 @@
   * 빈칸일 시 경고창 및 해당 칸 포커싱
 
 ## 참고 링크
-* [웹사이트 방문하기](https://dainty-lily-0b9306.netlify.app/)
+* [웹사이트 바로가기](https://dainty-lily-0b9306.netlify.app/)
 * [피그마 UIUX 작업보기](https://www.figma.com/file/XctZukgUN8np1vCRJKhzRF/%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%86%A0%EC%8A%A4?type=design&node-id=0-1&mode=design&t=0x6XRHpTHVaUsSKl-0)
 
