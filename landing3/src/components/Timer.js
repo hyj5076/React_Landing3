@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState, useMemo } from 'react';
 
 function Timer() {
-    const exhibitionDate = useMemo(() => new Date('2023-10-21T10:00:00'), []);
+    const exhibitionDate = useMemo(() => new Date('2023-12-16T10:00:00'), []);
     const [time, setTime] = useState({
         days: 0,
         hours: '00',

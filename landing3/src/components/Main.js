@@ -56,7 +56,7 @@ function Main() {
                         <div className="inner">
                             <h1>힐스테이트 푸르지오 수원</h1>
                             <p className="exhibition">입주전시회</p>
-                            <p className="date">2023. 10. 21 토 - 10. 22 일</p>
+                            <p className="date">2023. 12. 16 토 - 12. 17 일</p>
                             <p className="time">10 AM - 6 PM</p>
                             <div className="btn">
                                 <Link className="submit_btn" to="/submit">참가신청</Link>

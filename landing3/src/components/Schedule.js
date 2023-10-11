@@ -43,7 +43,7 @@ function Schedule() {
                         <ShowDdayFunction />
                         <div className="txt">
                             <h5>일정</h5>
-                            <p>2023 <span>10.21</span> 토 - <span>10.22</span> 일 </p>
+                            <p>2023 <span>12.16</span> 토 - <span>12.17</span> 일 </p>
                             <p>10AM - 6PM</p>
                         </div>
                     </div>

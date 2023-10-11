@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import flatpickr from 'flatpickr';
 
 const ShowDdayFunction = () => {
-    const [startDate, setStartDate] = useState('2023-10-21');
-    const [endDate, setEndDate] = useState('2023-10-22');
+    const [startDate, setStartDate] = useState('2023-12-16');
+    const [endDate, setEndDate] = useState('2023-12-17');
     const [calendarVisible, setCalendarVisible] = useState(false);
     const [calendar, setCalendar] = useState(null);
 
