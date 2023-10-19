@@ -31,8 +31,13 @@ function BenefitList() {
                         <div className="benefit">
                             {displayItems.map(benefit => (
                                 <div key={benefit.id}>
-                                    <div><img src={benefit.img} alt={benefit.title} /></div>
-                                    <p>{benefit.title}</p>
+                                <div>
+                                <img 
+                                    src={benefit.img} 
+                                    alt={benefit.title} 
+                                />
+                                </div>
+                                <p>{benefit.title}</p>
                                 </div>
                             ))}
                         </div>
